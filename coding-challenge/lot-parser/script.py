@@ -94,8 +94,6 @@ for i in range(len(names)):
  
 output = [{'artist': artist, 'totalValue': value, 'works': work} for artist, value, work in zip(nameset, artist_totals, artist_works)]
 
-std
-
 output = json.dumps(output)
 
 sys.stdout.write(output)
